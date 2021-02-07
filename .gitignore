@@ -1,0 +1,14 @@
+etc/
+src/*.txt
+src/region-reaper
+src/*.log
+src/*.log.*
+storage/
+.ssh/
+.env
+*.log
+*.out
+*.log.*
+srv-*
+service
+web-*
