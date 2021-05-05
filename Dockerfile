@@ -4,7 +4,7 @@
 FROM golang:1.15 AS builder
 
 # File Author / Maintainer
-MAINTAINER VELES GROUP
+MAINTAINER DIGITAL COUNTRY
 
 RUN apt-get update && apt-get install -y net-tools dnsutils  ca-certificates libproj-dev protobuf-compiler && apt-get clean -y
 WORKDIR /root
@@ -52,7 +52,7 @@ RUN rm -rf /root/.ssh/
 # second stage to obtain a very small image
 FROM alpine:latest
 # File Author / Maintainer
-MAINTAINER VELES GROUP
+MAINTAINER DIGITAL COUNTRY
 
 RUN mkdir /app && mkdir /app/static && mkdir /app/etc
 

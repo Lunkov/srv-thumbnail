@@ -92,7 +92,7 @@ start() {
 # COMPILE CONTAINER
 compile() {
   log "COMPILE $CONTAINER_NAME"
-  DOCKERFILE=$(pwd)/docker/Dockerfile.builder
+  DOCKERFILE=$(pwd)/Dockerfile
   
   docker build --force-rm=true --no-cache -f $DOCKERFILE -t $DOCKER_ID_USER/$CONTAINER_NAME:$TAG .
   # docker tag go-builder go-builder:latest
